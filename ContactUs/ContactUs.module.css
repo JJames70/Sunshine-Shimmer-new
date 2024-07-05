@@ -1,0 +1,99 @@
+.container {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Permalink - use to edit and share this gradient. Link permanente - use para editar e compartilhar este gradiente: https://colorzilla.com/gradient-editor/#f5e4cf+0,d9d2dd+43,d9d2dd+66,b7beed+86,b7beed+86,2989d8+100 */
+    background: linear-gradient(to bottom, rgb(245,228,207) 0%,rgb(217,210,221) 43%,rgb(217,210,221) 66%,rgb(183,190,237) 86%,rgb(183,190,237) 86%,rgb(41,180,219) 100%);    
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    border-top: 8px solid white;
+    color: black;
+}
+
+.section {
+    width: 90%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'Tiempos Light';
+}
+
+.sectionSubTitle {
+    font-size: 16px;
+    font-family: 'Sofia Pro Bold';
+    letter-spacing: 4px;
+}
+
+.sectionText {
+    font-size: 16px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.contactButton {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    color: black;
+    margin-top: 30px;
+    font-family: 'Sofia Pro SemiBold';
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.mapSection {
+    width: 95%;
+    max-width: 850px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.addressSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.addressSectionText {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.mapImage {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 650px) {
+    .mapSection {
+        flex-direction: column;
+    }
+
+    .addressSection {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .mapImage {
+        width: 90%;
+        height: 80%;
+    }
+}

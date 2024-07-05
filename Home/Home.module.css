@@ -1,0 +1,157 @@
+.container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 8px solid white;
+    border-top: 8px solid white;
+    background-image: url("../../assets/images/home/1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F5F0ED;
+}
+
+.homeImage {
+    width: 600px;
+    border-radius: 5px;
+}
+
+.sectionTextBox {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.sectionTitle {
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'Tiempos Light';
+}
+
+.sectionSubTitle {
+    font-size: 16px;
+    font-family: 'Sofia Pro Bold';
+    letter-spacing: 4px;
+}
+
+.sectionText {
+    font-size: 16px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.sectionButton {
+    width: 140px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    font-family: 'Sofia Pro SemiBold';
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: black;
+    margin-top: 30px;
+}
+
+.featuredProjects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.featuredProjectsHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.featuredProjectsTitle {
+    font-size: 34px;
+    font-family: 'Tiempos Light';
+}
+
+.featuredProjectsButton {
+    width: 250px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    font-family: 'Sofia Pro SemiBold';
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+    .section {
+        flex-direction: column;
+    }
+    #invertSession {
+        flex-direction: column-reverse;
+    }
+    .homeImage {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 700px) {
+    .sectionTextBox {
+        width: 90%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    #riptide {
+        margin-right: 0 !important;
+    }
+    .homeImage {
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+    .featuredProjects {
+        padding-top: 40px;
+    }
+    .featuredProjectsHeader {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .featuredProjectsButton {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 300px) {
+    .featuredProjectsButton {
+        width: 95%
+    }
+    .sectionButton {
+        width: 90%;
+    }
+}
